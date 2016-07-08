@@ -1,165 +1,40 @@
-#Blocks
 tile.workbench.name=Oak Crafting Table
+tile.littlethings:crafting_table.acacia.name=Acacia Crafting Table
+tile.littlethings:crafting_table.birch.name=Birch Crafting Table
+tile.littlethings:crafting_table.dark_oak.name=Dark Oak Crafting Table
+tile.littlethings:crafting_table.spruce.name=Spruce Crafting Table
+tile.littlethings:crafting_table.jungle.name=Jungle Crafting Table
+
 tile.furnace.name=Stone Furnace
+tile.littlethings:metal_furnace_iron.name=Iron Furnace
+tile.littlethings:metal_furnace_gold.name=Gold Furnace
+tile.littlethings:metal_furnace_diamond.name=Diamond Furnace
+tile.littlethings:metal_furnace_emerald.name=Emerald Furnace
 
-tile.littlethings:vanillaCraftingTable.acacia.name=Acacia Crafting Table
-tile.littlethings:vanillaCraftingTable.birch.name=Birch Crafting Table
-tile.littlethings:vanillaCraftingTable.darkoak.name=Dark Oak Crafting Table
-tile.littlethings:vanillaCraftingTable.spruce.name=Spruce Crafting Table
-tile.littlethings:vanillaCraftingTable.jungle.name=Jungle Crafting Table
-
-tile.littlethings:mobChest.chicken.name=Chicken Chest
-tile.littlethings:mobChest.cow.name=Cow Chest
-tile.littlethings:mobChest.pig.name=Pig Chest
-tile.littlethings:mobChest.sheep.name=Sheep Chest
-tile.littlethings:mobChest.dog.name=Dog Chest
-tile.littlethings:mobChest.squid.name=Squid Chest
-tile.littlethings:mobChest.zombie.name=Zombie Chest
-tile.littlethings:mobChest.skeleton.name=Skeleton Chest
-tile.littlethings:mobChest.creeper.name=Creeper Chest
-tile.littlethings:mobChest.spider.name=Spider Chest
-
-tile.littlethings:metalFurnace.iron.name=Iron Furnace
-tile.littlethings:metalFurnace.gold.name=Gold Furnace
-tile.littlethings:metalFurnace.diamond.name=Diamond Furnace
-tile.littlethings:metalFurnace.emerald.name=Emerald Furnace
-
-tile.littlethings:itemElevator.name=Item Elevator
-tile.littlethings:clearGlass.name=Clear Glass
-tile.littlethings:stainedClearGlass.white.name=White Stained Clear Glass
-tile.littlethings:stainedClearGlass.orange.name=Orange Stained Clear Glass
-tile.littlethings:stainedClearGlass.magenta.name=Magenta Stained Clear Glass
-tile.littlethings:stainedClearGlass.lightBlue.name=Light Blue Stained Clear Glass
-tile.littlethings:stainedClearGlass.yellow.name=Yellow Stained Clear Glass
-tile.littlethings:stainedClearGlass.lime.name=Lime Stained Clear Glass
-tile.littlethings:stainedClearGlass.pink.name=Pink Stained Clear Glass
-tile.littlethings:stainedClearGlass.gray.name=Gray Stained Clear Glass
-tile.littlethings:stainedClearGlass.silver.name=Silver Stained Clear Glass
-tile.littlethings:stainedClearGlass.cyan.name=Cyan Stained Clear Glass
-tile.littlethings:stainedClearGlass.purple.name=Purple Stained Clear Glass
-tile.littlethings:stainedClearGlass.blue.name=Blue Stained Clear Glass
-tile.littlethings:stainedClearGlass.brown.name=Brown Stained Clear Glass
-tile.littlethings:stainedClearGlass.green.name=Green Stained Clear Glass
-tile.littlethings:stainedClearGlass.red.name=Red Stained Clear Glass
-tile.littlethings:stainedClearGlass.black.name=Black Stained Clear Glass
-
-tile.littlethings:unenchantingTable.name=Unenchanting Table
-tile.littlethings:expStore.name=Experience Store
-tile.littlethings:stoneTorch.name=Stone Torch
-tile.littlethings:barbedWire.name=Barbed Wire
-tile.littlethings:stove.name=Stove
-tile.littlethings:redstoneClock.name=Redstone Clock
-
-#Items
-item.littlethings:ironNugget.name=Iron Nugget
-
-item.littlethings:hammerWood.name=Wooden Hammer
-item.littlethings:hammerStone.name=Stone Hammer
-item.littlethings:hammerIron.name=Iron Hammer
-item.littlethings:hammerGold.name=Gold Hammer
-item.littlethings:hammerDiamond.name=Diamond Hammer
-
-item.littlethings:excavatorWood.name=Wooden Excavator
-item.littlethings:excavatorStone.name=Stone Excavator
-item.littlethings:excavatorIron.name=Iron Excavator
-item.littlethings:excavatorGold.name=Gold Excavator
-item.littlethings:excavatorDiamond.name=Diamond Excavator
-
-item.littlethings:obsidian_sword.name=Obsidian Sword
-item.littlethings:obsidian_pickaxe.name=Obsidian Pickaxe
-item.littlethings:obsidian_axe.name=Obsidian Axe
-item.littlethings:obsidian_spade.name=Obsidian Shovel
-item.littlethings:obsidian_hoe.name=Obsidian Hoe
-item.littlethings:hammerObsidian.name=Obsidian Hammer
-item.littlethings:excavatorObsidian.name=Obsidian Excavator
-
-item.littlethings:emerald_sword.name=Emerald Sword
-item.littlethings:emerald_pickaxe.name=Emerald Pickaxe
-item.littlethings:emerald_axe.name=Emerald Axe
-item.littlethings:emerald_spade.name=Emerald Shovel
-item.littlethings:emerald_hoe.name=Emerald Hoe
-item.littlethings:hammerEmerald.name=Emerald Hammer
-item.littlethings:excavatorEmerald.name=Emerald Excavator
+tile.littlethings:clear_glass.name=Clear Glass
+tile.littlethings:colored_clear_glass.white.name=White Clear Glass
+tile.littlethings:colored_clear_glass.orange.name=Orange Clear Glass
+tile.littlethings:colored_clear_glass.magenta.name=Magenta Clear Glass
+tile.littlethings:colored_clear_glass.light_blue.name=Light Blue Clear Glass
+tile.littlethings:colored_clear_glass.yellow.name=Yellow Clear Glass
+tile.littlethings:colored_clear_glass.pink.name=Pink Clear Glass
+tile.littlethings:colored_clear_glass.gray.name=Gray Clear Glass
+tile.littlethings:colored_clear_glass.silver.name=Silver Clear Glass
+tile.littlethings:colored_clear_glass.cyan.name=Cyan Clear Glass
+tile.littlethings:colored_clear_glass.purple.name=Purple Clear Glass
+tile.littlethings:colored_clear_glass.blue.name=Blue Clear Glass
+tile.littlethings:colored_clear_glass.brown.name=Brown Clear Glass
+tile.littlethings:colored_clear_glass.green.name=Green Clear Glass
+tile.littlethings:colored_clear_glass.red.name=Red Clear Glass
+tile.littlethings:colored_clear_glass.black.name=Black Clear Glass
 
 item.littlethings:crossbow.name=Crossbow
-item.littlethings:crossbolt.normal.name=Crossbolt
-item.littlethings:crossbolt.explosive.name=Explosive Crossbolt
-item.littlethings:crossbolt.spectral.name=Spectral Crossbolt
-item.littlethings:crossbolt.wither.name=Wither Crossbolt
-item.littlethings:crossbolt.poison.name=Poison Crossbolt
-item.littlethings:crossbolt.slowness.name=Slowness Crossbolt
-
-item.littlethings:bejeweledApple.name=Bejeweled Apple
-item.littlethings:stoneStick.name=Stone Stick
-item.littlethings:mobDust.wither.name=Wither Dust
-item.littlethings:mobDust.poison.name=Poison Dust
-
-item.littlethings:friedEgg.name=Fried Egg
-item.littlethings:packSeeds.name=Pack Of Seeds
-item.littlethings:pan.name=Iron Pan
-
-#Entities
-entity.LittleThings.CrossBolt.name=CrossBolt
-entity.LittleThings.CrossBolt_Explosive.name=Explosive CrossBolt
-entity.LittleThings.CrossBolt_Potion.name=Potion CrossBolt
-
-#Tooltips
-tooltip.littlethings.playerSkull=Player Skull
-tooltip.littlethings.skullOwner=Skull Owner: %s
-tooltip.littlethings.foodrating=Food Rating: %s
-
-#Friend Skulls
-tooltip.littlethings.skull.LilMissSpl3nd0r=I will hug you to death!
-tooltip.littlethings.skull.Mrs_Fluffy="I took a good shit today"-2016
-tooltip.littlethings.skull.Mrs_Fluffy.clean="I took a good poop today"-2016
-tooltip.littlethings.skull.CamGaming69=Tea and Crumpets!
-tooltip.littlethings.skull.HCGamingMC=Shoot all your problems away!
-tooltip.littlethings.skull.GingerMikie=Ride more, Worry less
-
-#Containers
-container.itemElevator=Item Elevator
-
-container.upgradedFurnace.iron=Iron Furnace
-container.upgradedFurnace.gold=Gold Furnace
-container.upgradedFurnace.diamond=Diamond Furnace
-container.upgradedFurnace.emerald=Emerald Furnace
-
-container.animalChest.chicken=Chicken Chest
-container.animalChest.cow=Cow Chest
-container.animalChest.pig=Pig Chest
-container.animalChest.sheep=Sheep Chest
-container.animalChest.dog=Dog Chest
-container.animalChest.squid=Squid Chest
-container.animalChest.zombie=Zombie Chest
-container.animalChest.skeleton=Skeleton Chest
-container.animalChest.creeper=Creeper Chest
-container.animalChest.spider=Spider Chest
-
-container.unenchantingTable=Unenchanting Table
-container.stove=Stove
-
-#Command Usage
-command.littlethings.head=/head
-command.littlethings.gms=/gms [player]
-command.littlethings.gma=/gma [player]
-command.littlethings.gmc=/gmc [player]
-command.littlethings.gmsp=/gmsp [player]
-command.littlethings.skull=/skull <player>
-command.littlethings.tpdim=/tpdim
-command.littlethings.tpdim.noDim=Dimension #%s does not exist!
-command.littlethings.tpdim.useVanilla=Please use /tp to run this command (Will be operational soon)
-command.littlethings.tpdim.success.dim=Successfully Teleported %s to dimension #%d at %d %d %d
-command.littlethings.tpdim.success.player=Successfully Teleported %s to %s
-
-#Deaths
-death.attack.barbedWire=%s tried to climb through barbed wire
-
-#Versioning
-littlethings.versioning.alpha=New Alpha Build Found!
-littlethings.versioning.other=New Version Found!
-
-littlethings.versioning.messageAlpha=["Go to the [",{"text":"Download Page","clickEvent":{"action":"open_url","value":"https://drive.google.com/drive/folders/0B9-zqyDgitL5a0pKU2REbEFPUHM"}},"] [",{"text":"Changelog","clickEvent":{"action":"open_url","value":"https://drive.google.com/drive/folders/0B9-zqyDgitL5a0pKU2REbEFPUHM"}},"]"]
-littlethings.versioning.messageOther=["Go to the [",{"text":"Download Page","clickEvent":{"action":"open_url","value":"http://minecraft.curseforge.com/projects/littlethings/files"}},"] [",{"text":"Changelog","clickEvent":{"action":"open_url","value":"http://minecraft.curseforge.com/projects/littlethings/files"}},"]"]
-
-message.littlethings.deathCoords=You died at: %d, %d, %d
-message.littlethings.deathLinks=[" [", {"text":"Teleport Back", "clickEvent":{"action":"run_command","value":"/tpdim %w% %x% %y% %z%"}}, "]"]
+item.littlethings:cross_bolt.normal.name=Crossbolt
+item.littlethings:cross_bolt.explosive.name=Explosive Crossbolt
+item.littlethings:cross_bolt.spectral.name=Spectral Crossbolt
+item.littlethings:cross_bolt.wither.name=Wither Crossbolt
+item.littlethings:cross_bolt.poison.name=Poison Crossbolt
+item.littlethings:cross_bolt.slowness.name=Slowness Crossbolt
+entity.LittleThings.CrossBolt_Potion.name=Potion Crossbolt
+entity.LittleThings.CrossBolt.name=Crossbolt
+entity.LittleThings.CrossBolt_Explosive.name=Explosive Crossbolt

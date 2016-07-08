@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "littlethings:blocks/glass/clear/all",
+    "up": "littlethings:blocks/glass/light_blue/none",
+    "down": "littlethings:blocks/glass/light_blue/none",
+    "north": "littlethings:blocks/glass/clear/none",
+    "south": "littlethings:blocks/glass/clear/none",
+    "east": "littlethings:blocks/glass/clear/none",
+    "west": "littlethings:blocks/glass/clear/none"
+  }
+}

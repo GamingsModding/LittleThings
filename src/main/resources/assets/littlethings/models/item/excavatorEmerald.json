@@ -1,6 +1,0 @@
-{
-  "parent": "littlethings:item/_standard_item",
-  "textures": {
-    "layer0": "littlethings:items/excavatorEmerald"
-  }
-}

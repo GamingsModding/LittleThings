@@ -1,0 +1,82 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north",
+        "burning": "false"
+      },
+      "apply": {
+        "model": "littlethings:metal_furnace_iron"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "burning": "false"
+      },
+      "apply": {
+        "model": "littlethings:metal_furnace_iron",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "burning": "false"
+      },
+      "apply": {
+        "model": "littlethings:metal_furnace_iron",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "burning": "false"
+      },
+      "apply": {
+        "model": "littlethings:metal_furnace_iron",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "burning": "true"
+      },
+      "apply": {
+        "model": "littlethings:metal_furnace_iron_lit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "burning": "true"
+      },
+      "apply": {
+        "model": "littlethings:metal_furnace_iron_lit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "burning": "true"
+      },
+      "apply": {
+        "model": "littlethings:metal_furnace_iron_lit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "burning": "true"
+      },
+      "apply": {
+        "model": "littlethings:metal_furnace_iron_lit",
+        "y": 270
+      }
+    }
+  ]
+}

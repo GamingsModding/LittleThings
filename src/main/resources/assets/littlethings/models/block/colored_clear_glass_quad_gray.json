@@ -1,0 +1,19 @@
+{
+  "parent": "block/cube",
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [0, 135, 0],
+      "translation": [0, 0, 0],
+      "scale": [0.4, 0.4, 0.4]
+    }
+  },
+  "textures": {
+    "particle": "littlethings:blocks/glass/gray/all",
+    "down": "littlethings:blocks/glass/gray/triple0",
+    "up": "littlethings:blocks/glass/clear/none",
+    "north": "littlethings:blocks/glass/gray/triple0",
+    "east": "littlethings:blocks/glass/clear/none",
+    "south": "littlethings:blocks/glass/clear/none",
+    "west": "littlethings:blocks/glass/clear/none"
+  }
+}
