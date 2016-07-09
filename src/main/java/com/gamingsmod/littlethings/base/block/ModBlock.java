@@ -77,7 +77,7 @@ public class ModBlock extends Block implements ILittleThingsBlock
 
     }
 
-
+    @Override
     public void registerItemModel(int meta, String file)
     {
         Minecraft.getMinecraft().getRenderItem()

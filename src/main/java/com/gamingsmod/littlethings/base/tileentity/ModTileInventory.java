@@ -14,12 +14,10 @@ public abstract class ModTileInventory extends TileEntity implements IInventory
 {
     public ItemStack[] inventory;
     protected String customName;
-    protected String baseName;
 
-    public ModTileInventory(String baseName)
+    public ModTileInventory()
     {
         this.inventory = new ItemStack[this.getSizeInventory()];
-        this.baseName = baseName;
     }
 
     public String getCustomName()
@@ -30,12 +28,6 @@ public abstract class ModTileInventory extends TileEntity implements IInventory
     public void setCustomName(String customName)
     {
         this.customName = customName;
-    }
-
-    @Override
-    public String getName()
-    {
-        return this.hasCustomName() ? this.customName : "container." + baseName;
     }
 
     @Override

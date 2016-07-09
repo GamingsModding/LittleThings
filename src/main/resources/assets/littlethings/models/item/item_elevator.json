@@ -1,5 +1,5 @@
 {
-  "parent": "littlethings:block/itemElevator",
+  "parent": "littlethings:block/item_elevator",
   "display": {
     "thirdperson": {
       "rotation": [

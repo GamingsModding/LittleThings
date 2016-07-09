@@ -38,3 +38,8 @@ item.littlethings:cross_bolt.slowness.name=Slowness Crossbolt
 entity.LittleThings.CrossBolt_Potion.name=Potion Crossbolt
 entity.LittleThings.CrossBolt.name=Crossbolt
 entity.LittleThings.CrossBolt_Explosive.name=Explosive Crossbolt
+
+container.littlethings.item_elevator=Item Elevator
+tile.littlethings:item_elevator.name=Item Elevator
+
+container.littlethings.tba=Coming Soon...
