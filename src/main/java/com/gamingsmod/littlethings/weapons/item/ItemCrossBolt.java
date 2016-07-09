@@ -6,7 +6,7 @@ public class ItemCrossBolt extends ModItemVariants
 {
     public ItemCrossBolt()
     {
-        super(new String[]{"normal", "explosive", "spectral", "wither", "poison", "slowness"});
+        super(new String[]{"normal", "explosive", "spectral"});
         setUnlocalizedName("cross_bolt");
     }
 }

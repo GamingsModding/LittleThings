@@ -42,12 +42,6 @@ public class ItemCrossbow extends ModItem
                         entityCrossBolt = new EntityCrossBoltExplosive(worldIn, playerIn);
                     else if (ammo.getMetadata() == 2)
                         entityCrossBolt = (new EntityCrossBoltPotion(worldIn, playerIn, ammo)).setPotionEffect(MobEffects.GLOWING);
-                    else if (ammo.getMetadata() == 3)
-                        entityCrossBolt = (new EntityCrossBoltPotion(worldIn, playerIn, ammo)).setPotionEffect(MobEffects.WITHER, 100, 0);
-                    else if (ammo.getMetadata() == 4)
-                        entityCrossBolt = (new EntityCrossBoltPotion(worldIn, playerIn, ammo)).setPotionEffect(MobEffects.POISON, 100, 1);
-                    else if (ammo.getMetadata() == 5)
-                        entityCrossBolt = (new EntityCrossBoltPotion(worldIn, playerIn, ammo)).setPotionEffect(MobEffects.MINING_FATIGUE);
 
                 } else if (playerIn.isCreative()) {
                     entityCrossBolt = new EntityCrossBolt(worldIn, playerIn);
