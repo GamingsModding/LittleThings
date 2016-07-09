@@ -2,6 +2,7 @@ package com.gamingsmod.littlethings.vanity;
 
 import com.gamingsmod.littlethings.base.loader.Section;
 import com.gamingsmod.littlethings.vanity.addition.NoConflictRecipes;
+import com.gamingsmod.littlethings.vanity.addition.RawFoodHunger;
 
 public class VanitySection extends Section
 {
@@ -9,5 +10,6 @@ public class VanitySection extends Section
     public void registerAdditions()
     {
         addAddition(new NoConflictRecipes());
+        addAddition(new RawFoodHunger(), "Raw food gives hunger effect");
     }
 }

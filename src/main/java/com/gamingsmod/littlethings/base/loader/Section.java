@@ -27,11 +27,16 @@ public class Section
     protected void addAddition(Addition addition)
     {
         String name = createHumanClassNames(addition.getClass()).replace(" Section", "");
+        addAddition(addition, name);
+    }
 
+    protected void addAddition(Addition addition, String name)
+    {
         if (!additions.containsKey(name))
             additions.put(name, addition);
         else
             throw new RuntimeException(name + " already exists in " + this.getClass().getName());
+
     }
 
     public void preInit(FMLPreInitializationEvent e)
