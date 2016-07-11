@@ -42,12 +42,14 @@ public class ModItem extends Item implements ILittleThingsItem
         return this;
     }
 
+    @Override
     @SideOnly(Side.CLIENT)
     public void registerItemVariants()
     {
 
     }
 
+    @Override
     @SideOnly(Side.CLIENT)
     public void registerRender()
     {

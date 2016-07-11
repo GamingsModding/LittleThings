@@ -43,4 +43,7 @@ entity.LittleThings.CrossBolt_Explosive.name=Explosive Crossbolt
 container.littlethings.item_elevator=Item Elevator
 tile.littlethings:item_elevator.name=Item Elevator
 
+item.littlethings:mob_chest.name=Mob Chest
+container.littlethings.mob_chest=Mob Chest
+
 container.littlethings.tba=Coming Soon...

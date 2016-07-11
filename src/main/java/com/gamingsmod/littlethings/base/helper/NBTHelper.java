@@ -180,4 +180,10 @@ public class NBTHelper
 
         itemStack.getTagCompound().setDouble(keyName, keyValue);
     }
+
+    public static boolean hasKey(ItemStack stack, String keyName)
+    {
+        initNBTTagCompound(stack);
+        return stack.getTagCompound().hasKey(keyName);
+    }
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "littlethings:blocks/empty",
+    "south": "littlethings:blocks/empty",
+    "east": "littlethings:blocks/empty",
+    "west": "littlethings:blocks/empty",
+    "top": "littlethings:blocks/empty",
+    "down": "littlethings:blocks/empty",
+    "particle": "blocks/planks_oak"
+  }
+}

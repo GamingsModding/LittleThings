@@ -10,6 +10,9 @@ import com.gamingsmod.littlethings.decoration.DecorationSection;
 import com.gamingsmod.littlethings.vanity.VanitySection;
 import com.gamingsmod.littlethings.weapons.WeaponsSection;
 import com.gamingsmod.littlethings.world.WorldSection;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemMeshDefinition;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -102,7 +105,12 @@ public class SectionLoader
     public static void clientInit(FMLInitializationEvent e)
     {
         blocks.forEach(ILittleThingsBlock::registerRender);
-        items.forEach(ILittleThingsItem::registerRender);
+        items.forEach((item) -> {
+            ItemMeshDefinition def = item.registerCustomMeshDefinition();
+
+            if (def == null) item.registerRender();
+            else Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register((Item) item, def);
+        });
         forEachSection(section -> section.clientInit(e));
     }
 

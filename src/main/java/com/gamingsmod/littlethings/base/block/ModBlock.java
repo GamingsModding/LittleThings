@@ -1,6 +1,5 @@
 package com.gamingsmod.littlethings.base.block;
 
-
 import com.gamingsmod.littlethings.base.item.ItemBlockMeta;
 import com.gamingsmod.littlethings.base.lib.LibMisc;
 import com.gamingsmod.littlethings.base.loader.SectionLoader;
@@ -37,7 +36,13 @@ public class ModBlock extends Block implements ILittleThingsBlock
     }
 
     @Override
-    public Block setUnlocalizedName(String name)
+    public String getUnlocalizedName()
+    {
+        return String.format("tile.%s%s", LibMisc.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    @Override
+    public ModBlock setUnlocalizedName(String name)
     {
         super.setUnlocalizedName(name);
         baseName = name;
@@ -54,12 +59,6 @@ public class ModBlock extends Block implements ILittleThingsBlock
             GameRegistry.register(new ItemBlock(this), getRegistryName());
 
         return this;
-    }
-
-    @Override
-    public String getUnlocalizedName()
-    {
-        return String.format("tile.%s%s", LibMisc.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
