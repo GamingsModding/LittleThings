@@ -6,6 +6,7 @@ import com.gamingsmod.littlethings.base.helper.ConfigHelper;
 import com.gamingsmod.littlethings.base.helper.LogHelper;
 import com.gamingsmod.littlethings.base.item.ILittleThingsItem;
 import com.gamingsmod.littlethings.building.BuildingSection;
+import com.gamingsmod.littlethings.command.CommandSection;
 import com.gamingsmod.littlethings.decoration.DecorationSection;
 import com.gamingsmod.littlethings.vanity.VanitySection;
 import com.gamingsmod.littlethings.weapons.WeaponsSection;
@@ -45,6 +46,7 @@ public class SectionLoader
         registerSection(VanitySection.class);
         registerSection(WeaponsSection.class);
         registerSection(BuildingSection.class);
+        registerSection(CommandSection.class);
     }
 
     public static void setupConfig(FMLPreInitializationEvent e)

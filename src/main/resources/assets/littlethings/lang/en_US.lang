@@ -47,3 +47,9 @@ item.littlethings:mob_chest.name=Mob Chest
 container.littlethings.mob_chest=Mob Chest
 
 container.littlethings.tba=Coming Soon...
+
+command.littlethings.tpdim=/tpdim <dimension #> [x] [y] [z] OR /tpdim <player> <dimension #> [x] [y] [z] OR /tpdim <target player> [destination player]
+command.littlethings.tpdim.noDim=Dimension #%s does not exist!
+command.littlethings.tpdim.useVanilla=Please use /tp to run this command (Will be operational soon)
+command.littlethings.tpdim.success.dim=Successfully Teleported %s to dimension #%d at %d %d %d
+command.littlethings.tpdim.success.player=Successfully Teleported %s to %s

@@ -1,7 +1,7 @@
-package com.gamingsmod.littlethings.vanity.addition;
+package com.gamingsmod.littlethings.command.addition;
 
 import com.gamingsmod.littlethings.base.loader.Addition;
-import com.gamingsmod.littlethings.vanity.commands.CommandGamemodeShortcut;
+import com.gamingsmod.littlethings.command.command.CommandGamemodeShortcut;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
 public class GamemodeShortcuts extends Addition

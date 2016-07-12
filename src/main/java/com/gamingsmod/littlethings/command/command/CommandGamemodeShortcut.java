@@ -1,4 +1,4 @@
-package com.gamingsmod.littlethings.vanity.commands;
+package com.gamingsmod.littlethings.command.command;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
