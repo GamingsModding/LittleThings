@@ -4,6 +4,7 @@ import com.gamingsmod.littlethings.base.block.ModBlockVariants;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockPressurePlate;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.EnumPushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
@@ -12,11 +13,14 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -45,6 +49,8 @@ public class BlockVanillaPressurePlates extends ModBlockVariants
         setTickRandomly(true);
         setDefaultState(this.blockState.getBaseState().withProperty(POWERED, false));
         setUnlocalizedName("wooden_pressure_plate");
+        setHardness(0.5F);
+        setSoundType(SoundType.WOOD);
         sensitivity = BlockPressurePlate.Sensitivity.EVERYTHING;
     }
 
@@ -66,6 +72,18 @@ public class BlockVanillaPressurePlates extends ModBlockVariants
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos)
     {
         return NULL_AABB;
+    }
+
+    @Override
+    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player)
+    {
+        return new ItemStack(this, 1, getMetaFromState(state) - (state.getValue(POWERED) ? 8 : 0));
+    }
+
+    @Override
+    public int damageDropped(IBlockState state)
+    {
+        return getMetaFromState(state) - (state.getValue(POWERED) ? 8 : 0);
     }
 
     @Override
