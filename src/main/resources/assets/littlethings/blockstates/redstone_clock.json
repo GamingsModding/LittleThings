@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "triggered=false": { "model": "littlethings:redstone_clock" },
+    "triggered=true": { "model": "littlethings:redstone_clock" }
+  }
+}
