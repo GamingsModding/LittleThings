@@ -49,6 +49,7 @@ public class EntityFakeItem extends EntityItem
                 ItemStack left = TileEntityHopper.putStackInInventoryAllSlots((IInventory) te, getEntityItem(), EnumFacing.DOWN);
                 if (left != null) {
                     EntityItem realItem = new EntityItem(worldObj, posX, posY + 1, posZ, left);
+                    realItem.setAgeToCreativeDespawnTime();
                     worldObj.spawnEntityInWorld(realItem);
                 }
             }
