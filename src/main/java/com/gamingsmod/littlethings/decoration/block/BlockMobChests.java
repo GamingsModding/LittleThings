@@ -55,11 +55,13 @@ public class BlockMobChests extends ModBlockHorizontal implements ITileEntityPro
         return CHEST_AABB;
     }
 
+    @Override
     public boolean isOpaqueCube(IBlockState state)
     {
         return false;
     }
 
+    @Override
     public boolean isFullCube(IBlockState state)
     {
         return false;
@@ -81,7 +83,8 @@ public class BlockMobChests extends ModBlockHorizontal implements ITileEntityPro
     public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player)
     {
         ItemStack stack = new ItemStack(MobChests.mob_chest_item, 1, 0);
-        NBTHelper.setString(stack, NBT_MOB_TAG, mob_temp);
+        TileEntityMobChest te = (TileEntityMobChest) world.getTileEntity(pos);
+        NBTHelper.setString(stack, NBT_MOB_TAG, te.getMob());
         return stack;
     }
 
@@ -125,6 +128,7 @@ public class BlockMobChests extends ModBlockHorizontal implements ITileEntityPro
         worldIn.removeTileEntity(pos);
     }
 
+    @Override
     public EnumBlockRenderType getRenderType(IBlockState state)
     {
         return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
