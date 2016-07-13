@@ -48,6 +48,13 @@ container.littlethings.mob_chest=Mob Chest
 
 tile.littlethings:redstone_clock.name=Redstone Clock
 
+tile.pressurePlateWood.name=Oak Pressure Plate
+tile.littlethings:wooden_pressure_plate.acacia.name=Acacia Pressure Plate
+tile.littlethings:wooden_pressure_plate.birch.name=Birch Pressure Plate
+tile.littlethings:wooden_pressure_plate.dark_oak.name=Dark Oak Pressure Plate
+tile.littlethings:wooden_pressure_plate.spruce.name=Spruce Pressure Plate
+tile.littlethings:wooden_pressure_plate.jungle.name=Jungle Pressure Plate
+
 command.littlethings.tpdim=/tpdim <dimension #> [x] [y] [z] OR /tpdim <player> <dimension #> [x] [y] [z] OR /tpdim <target player> [destination player]
 command.littlethings.tpdim.noDim=Dimension #%s does not exist!
 command.littlethings.tpdim.useVanilla=Please use /tp to run this command (Will be operational soon)
