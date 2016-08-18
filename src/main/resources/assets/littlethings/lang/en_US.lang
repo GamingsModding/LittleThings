@@ -55,6 +55,13 @@ tile.littlethings:wooden_pressure_plate.dark_oak.name=Dark Oak Pressure Plate
 tile.littlethings:wooden_pressure_plate.spruce.name=Spruce Pressure Plate
 tile.littlethings:wooden_pressure_plate.jungle.name=Jungle Pressure Plate
 
+tile.wooden_button.name=Oak Button
+tile.littlethings:birch_button.name=Birch Button
+tile.littlethings:acacia_button.name=Acacia Button
+tile.littlethings:dark_oak_button.name=Dark Oak Button
+tile.littlethings:spruce_button.name=Spruce Button
+tile.littlethings:jungle_button.name=Jungle Button
+
 command.littlethings.tpdim=/tpdim <dimension #> [x] [y] [z] OR /tpdim <player> <dimension #> [x] [y] [z] OR /tpdim <target player> [destination player]
 command.littlethings.tpdim.noDim=Dimension #%s does not exist!
 command.littlethings.tpdim.useVanilla=Please use /tp to run this command (Will be operational soon)
