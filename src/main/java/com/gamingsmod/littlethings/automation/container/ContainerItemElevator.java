@@ -31,7 +31,7 @@ public class ContainerItemElevator extends Container
     }
 
     @Override
-    public ItemStack transferStackInSlot(EntityPlayer player, int index)
+    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index)
     {
         ItemStack itemstack = null;
         Slot slot = this.inventorySlots.get(index);
@@ -40,18 +40,25 @@ public class ContainerItemElevator extends Container
             ItemStack itemstack1 = slot.getStack();
             itemstack = itemstack1.copy();
 
-            if (index < 9)
-                if (!this.mergeItemStack(itemstack1, 9, 45, true))
+            if (index < 9) {
+                if (!this.mergeItemStack(itemstack1, 9, 45, true)) {
                     return null;
-            else if (!this.mergeItemStack(itemstack1, 0, 9, false))
+                }
+            } else if (!this.mergeItemStack(itemstack1, 0, 9, false)) {
                 return null;
+            }
 
-            if (itemstack1.stackSize == 0) slot.putStack(null);
-            else slot.onSlotChanged();
+            if (itemstack1.stackSize == 0) {
+                slot.putStack(null);
+            } else {
+                slot.onSlotChanged();
+            }
 
-            if (itemstack1.stackSize == itemstack.stackSize) return null;
+            if (itemstack1.stackSize == itemstack.stackSize) {
+                return null;
+            }
 
-            slot.onPickupFromSlot(player, itemstack1);
+            slot.onPickupFromSlot(playerIn, itemstack1);
         }
 
         return itemstack;
