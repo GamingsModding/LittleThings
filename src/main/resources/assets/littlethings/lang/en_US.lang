@@ -1,3 +1,5 @@
+entity.ItemFrame.name=Item Frame
+
 tile.workbench.name=Oak Crafting Table
 tile.littlethings:crafting_table.acacia.name=Acacia Crafting Table
 tile.littlethings:crafting_table.birch.name=Birch Crafting Table
@@ -67,5 +69,7 @@ command.littlethings.tpdim.noDim=Dimension #%s does not exist!
 command.littlethings.tpdim.useVanilla=Please use /tp to run this command (Will be operational soon)
 command.littlethings.tpdim.success.dim=Successfully Teleported %s to dimension #%d at %d %d %d
 command.littlethings.tpdim.success.player=Successfully Teleported %s to %s
+
+command.littlethings.time=Successfully set time to %s (Day: %d)
 
 container.littlethings.tba=Coming Soon...
