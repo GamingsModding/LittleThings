@@ -155,7 +155,6 @@ public abstract class ModTileInventory extends TileEntity implements IInventory
             this.setInventorySlotContents(i, null);
     }
 
-
     @Override
     public NBTTagCompound writeToNBT(NBTTagCompound nbt)
     {

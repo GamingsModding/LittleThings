@@ -13,7 +13,7 @@ public class ModItemVariants extends ModItem
 {
     private final String[] Variants;
 
-    public ModItemVariants(String[] variants)
+    public ModItemVariants(String... variants)
     {
         super();
         this.setHasSubtypes(true);
