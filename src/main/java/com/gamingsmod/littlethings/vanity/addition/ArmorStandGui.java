@@ -16,8 +16,13 @@ import java.util.List;
 
 public class ArmorStandGui extends Addition
 {
+    public static int armorStandInteraction = 0;
+
     public static EntityArmorStand getClosestArmorStand(Entity entityIn, World world, int distance)
     {
+        if (!world.isRemote || armorStandInteraction != 0) {
+            return (EntityArmorStand) world.getEntityByID(armorStandInteraction);
+        }
         AxisAlignedBB theViewBoundingBox = new AxisAlignedBB(
                 entityIn.posX - 0.5D,
                 entityIn.posY - 0.0D,
@@ -94,6 +99,7 @@ public class ArmorStandGui extends Addition
         Entity target = e.getTarget();
         if (target instanceof EntityArmorStand) {
             if (e.getEntityPlayer().isSneaking()) {
+                armorStandInteraction = e.getTarget().getEntityId();
                 e.getEntityPlayer().openGui(LittleThings.instance, GuiHandler.ARMOR_STAND, e.getWorld(), (int) target.posX, (int) target.posY, (int) target.posZ);
 
                 e.setCanceled(true);

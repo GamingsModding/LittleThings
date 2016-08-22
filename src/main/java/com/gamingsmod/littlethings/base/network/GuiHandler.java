@@ -7,6 +7,7 @@ import com.gamingsmod.littlethings.decoration.container.ContainerCraftingTable;
 import com.gamingsmod.littlethings.decoration.gui.container.GuiCraftingTable;
 import com.gamingsmod.littlethings.vanity.addition.ArmorStandGui;
 import com.gamingsmod.littlethings.vanity.container.ContainerArmorStand;
+import com.gamingsmod.littlethings.vanity.gui.GuiArmorStandRotation;
 import com.gamingsmod.littlethings.vanity.gui.container.GuiArmorStand;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
@@ -18,6 +19,7 @@ public class GuiHandler implements IGuiHandler
     public static final int CRAFTING_TABLE_NO_CONFLICT = 0;
     public static final int ITEM_ELEVATOR = 1;
     public static final int ARMOR_STAND = 2;
+    public static final int ARMOR_STAND_ROTATION = 3;
 
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
@@ -43,6 +45,8 @@ public class GuiHandler implements IGuiHandler
                 return new GuiItemElevator(player.inventory, (TileEntityItemElevator) world.getTileEntity(new BlockPos(x,y,z)));
             case ARMOR_STAND:
                 return new GuiArmorStand(player.inventory, ArmorStandGui.getClosestArmorStand(player, world, 5), player);
+            case ARMOR_STAND_ROTATION:
+                return new GuiArmorStandRotation(ArmorStandGui.getClosestArmorStand(player, world, 5), player);
         }
         return null;
     }

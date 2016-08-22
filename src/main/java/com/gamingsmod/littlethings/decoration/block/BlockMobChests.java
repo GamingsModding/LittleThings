@@ -28,6 +28,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -142,6 +144,7 @@ public class BlockMobChests extends ModBlockHorizontal implements ITileEntityPro
         return tileentity != null && tileentity.receiveClientEvent(id, param);
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public void registerRender()
     {

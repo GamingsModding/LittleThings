@@ -17,6 +17,8 @@ import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Crossbow extends Addition
 {
@@ -63,6 +65,7 @@ public class Crossbow extends Addition
         );
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public void clientPreInit(FMLPreInitializationEvent e)
     {

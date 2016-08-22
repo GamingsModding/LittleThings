@@ -2,6 +2,7 @@ package com.gamingsmod.littlethings.base.network;
 
 import com.gamingsmod.littlethings.base.lib.LibMisc;
 import com.gamingsmod.littlethings.base.network.message.MessageArmorStandGui;
+import com.gamingsmod.littlethings.base.network.message.MessageArmorStandRotation;
 import com.gamingsmod.littlethings.base.network.message.MessageGuiRecipeConflict;
 import com.gamingsmod.littlethings.base.network.message.MessageGuiRecipeConflictPlayer;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
@@ -19,6 +20,7 @@ public class MessageHandler
         register(MessageGuiRecipeConflict.class, Side.SERVER);
         register(MessageGuiRecipeConflictPlayer.class, Side.SERVER);
         register(MessageArmorStandGui.class, Side.SERVER);
+        register(MessageArmorStandRotation.class, Side.SERVER);
     }
 
     @SuppressWarnings("unchecked")

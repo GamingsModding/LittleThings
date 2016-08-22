@@ -1,6 +1,5 @@
 package com.gamingsmod.littlethings.command.command;
 
-import net.minecraft.client.resources.I18n;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
@@ -15,6 +14,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.management.PlayerList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 import net.minecraftforge.common.DimensionManager;
@@ -38,7 +38,7 @@ public class CommandTeleportDim extends CommandBase
     @Override
     public String getCommandUsage(ICommandSender sender)
     {
-        return I18n.format("command.littlethings.tpdim");
+        return I18n.translateToLocal("command.littlethings.tpdim");
     }
 
     @Override

@@ -16,6 +16,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemElevator extends Addition
 {
@@ -40,6 +42,7 @@ public class ItemElevator extends Addition
                 'd', new ItemStack(Blocks.DISPENSER));
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public void clientPreInit(FMLPreInitializationEvent e)
     {

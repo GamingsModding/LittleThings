@@ -1,8 +1,11 @@
 package com.gamingsmod.littlethings.vanity.gui.container;
 
+import com.gamingsmod.littlethings.base.LittleThings;
+import com.gamingsmod.littlethings.base.network.GuiHandler;
 import com.gamingsmod.littlethings.base.network.MessageHandler;
 import com.gamingsmod.littlethings.base.network.message.MessageArmorStandGui;
 import com.gamingsmod.littlethings.vanity.container.ContainerArmorStand;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.inventory.GuiInventory;
@@ -18,7 +21,7 @@ public class GuiArmorStand extends GuiContainer
     private IInventory playerInventory;
     private EntityArmorStand armorStand;
     private EntityPlayer player;
-    private GuiButton[] buttons = new GuiButton[3];
+    private GuiButton[] buttons = new GuiButton[4];
     private float oldMouseX;
     private float oldMouseY;
 
@@ -67,21 +70,26 @@ public class GuiArmorStand extends GuiContainer
         String small = this.armorStand.isSmall() ? "S" : "L";
         buttonList.add(buttons[0] = new GuiButton(0, guiLeft + 93, guiTop + 10, 80, 20, "Arms: " + armsVisible));
         buttonList.add(buttons[1] = new GuiButton(1, guiLeft + 93, guiTop + 30, 80, 20, "Base Plate: " + basePlate));
-        buttonList.add(buttons[2] = new GuiButton(2, guiLeft -20, guiTop + 10, 20, 20, small));
+        buttonList.add(buttons[2] = new GuiButton(2, guiLeft - 20, guiTop + 10, 20, 20, small));
+        buttonList.add(buttons[3] = new GuiButton(3, guiLeft - 20, guiTop + 30, 20, 20, "R"));
     }
 
     @Override
     protected void actionPerformed(GuiButton button) throws IOException
     {
+        int id = armorStand.getEntityId();
         if (button == buttons[0]) {
             // Show/Hide arms
-            MessageHandler.INSTANCE.sendToServer(new MessageArmorStandGui(4, !armorStand.getShowArms()));
+            MessageHandler.INSTANCE.sendToServer(new MessageArmorStandGui(id, 4, !armorStand.getShowArms()));
         } else if (button == buttons[1]) {
             // Show/Hide bottom plate
-            MessageHandler.INSTANCE.sendToServer(new MessageArmorStandGui(8, !armorStand.hasNoBasePlate()));
+            MessageHandler.INSTANCE.sendToServer(new MessageArmorStandGui(id, 8, !armorStand.hasNoBasePlate()));
         } else if (button == buttons[2]) {
             // Large/Small
-            MessageHandler.INSTANCE.sendToServer(new MessageArmorStandGui(1, !armorStand.isSmall()));
+            MessageHandler.INSTANCE.sendToServer(new MessageArmorStandGui(id, 1, !armorStand.isSmall()));
+        } else if (button == buttons[3]) {
+            // Display rotations screen
+            Minecraft.getMinecraft().thePlayer.openGui(LittleThings.instance, GuiHandler.ARMOR_STAND_ROTATION, armorStand.worldObj, (int) armorStand.posX, (int) armorStand.posY, (int) armorStand.posZ);
         } else {
             throw new IOException("WTF just happened? (Unknown button pressed)");
         }
