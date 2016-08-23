@@ -39,6 +39,13 @@ public class ContainerArmorStand extends Container
             {
                 return super.isItemValid(stack) && armorStand.getShowArms();
             }
+
+            @Override
+            @SideOnly(Side.CLIENT)
+            public boolean canBeHovered()
+            {
+                return armorStand.getShowArms();
+            }
         });
 
         for (int k = 0; k < 4; ++k) {
@@ -73,6 +80,12 @@ public class ContainerArmorStand extends Container
             public boolean isItemValid(@Nullable ItemStack stack)
             {
                 return super.isItemValid(stack) && armorStand.getShowArms();
+            }
+
+            @Override
+            public boolean canBeHovered()
+            {
+                return armorStand.getShowArms();
             }
 
             @Override

@@ -44,6 +44,11 @@ public class GuiArmorStand extends GuiContainer
         int i = (this.width - this.xSize) / 2;
         int j = (this.height - this.ySize) / 2;
         this.drawTexturedModalRect(i, j, 0, 0, this.xSize, this.ySize);
+
+        if (armorStand.getShowArms()) {
+            this.drawTexturedModalRect(i + 76, j + 43, 0, this.ySize, 18, 36);
+        }
+
         GuiInventory.drawEntityOnScreen(i + 51, j + 70, 30, (float)(i + 51) - this.oldMouseX, (float)(j + 75 - 50) - this.oldMouseY, this.armorStand);
     }
 
