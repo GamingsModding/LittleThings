@@ -56,14 +56,8 @@ public class GuiArmorStand extends GuiContainer
     public void drawScreen(int mouseX, int mouseY, float partialTicks)
     {
         super.drawScreen(mouseX, mouseY, partialTicks);
-        this.oldMouseX = (float)mouseX;
-        this.oldMouseY = (float)mouseY;
-        String armsVisible = this.armorStand.getShowArms() ? "Yes" : "No";
-        String basePlate = this.armorStand.hasNoBasePlate() ? "No" : "Yes";
-        String small = this.armorStand.isSmall() ? "S" : "L";
-        buttons[0].displayString = "Arms: " + armsVisible;
-        buttons[1].displayString = "Base Plate: " + basePlate;
-        buttons[2].displayString = small;
+        this.oldMouseX = (float) mouseX;
+        this.oldMouseY = (float) mouseY;
     }
 
     @Override
