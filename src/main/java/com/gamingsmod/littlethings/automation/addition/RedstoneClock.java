@@ -28,8 +28,10 @@ public class RedstoneClock extends Addition
     @Override
     public void init(FMLInitializationEvent e)
     {
-        RecipeHelper.addShapelessRecipe(redstone_clock,
-                new ItemStack(Blocks.REDSTONE_BLOCK),
-                new ItemStack(Items.CLOCK));
+        RecipeHelper.addShapedRecipe(redstone_clock,
+                "tdt", "dsd", "tdt",
+                't', new ItemStack(Blocks.REDSTONE_TORCH),
+                'd', new ItemStack(Items.REDSTONE),
+                's', new ItemStack(Blocks.STONE));
     }
 }
