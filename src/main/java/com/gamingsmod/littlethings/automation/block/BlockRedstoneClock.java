@@ -6,6 +6,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
@@ -22,6 +23,7 @@ public class BlockRedstoneClock extends ModBlockContainer
         setUnlocalizedName("redstone_clock");
         setDefaultState(this.getDefaultState().withProperty(TRIGGERED, false));
         setHardness(3.0F);
+        setCreativeTab(CreativeTabs.REDSTONE);
     }
 
     @Override
