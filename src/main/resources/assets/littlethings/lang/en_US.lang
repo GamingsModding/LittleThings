@@ -67,7 +67,7 @@ tile.littlethings:jungle_button.name=Jungle Button
 command.littlethings.tpdim=/tpdim <dimension #> [x] [y] [z] OR /tpdim <player> <dimension #> [x] [y] [z] OR /tpdim <target player> [destination player]
 command.littlethings.tpdim.noDim=Dimension #%s does not exist!
 command.littlethings.tpdim.useVanilla=Please use /tp to run this command (Will be operational soon)
-command.littlethings.tpdim.success.dim=Successfully Teleported %s to dimension #%d at %d %d %d
+command.littlethings.tpdim.success.dim=Successfully Teleported %s to %s (#%d) at %d %d %d
 command.littlethings.tpdim.success.player=Successfully Teleported %s to %s
 
 command.littlethings.time=Successfully set time to %s (Day: %d)
