@@ -2,7 +2,7 @@ package com.gamingsmod.littlethings.base.lib;
 
 public class LibMisc
 {
-    public static final String MOD_ID = "LittleThings";
+    public static final String MOD_ID = "littlethings";
     public static final String MOD_NAME = "Little Things";
     public static final String BUILD = "GRADLE:BUILD";
     public static final String VERSION = "GRADLE:VERSION-" + BUILD;

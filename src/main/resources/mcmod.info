@@ -1,6 +1,6 @@
 [
   {
-    "modid": "LittleThings",
+    "modid": "littlethings",
     "name": "Little Things",
     "description": "Adding little things to Minecraft to make it better",
     "version": "${version}",
