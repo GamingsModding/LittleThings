@@ -64,6 +64,12 @@ tile.littlethings:dark_oak_button.name=Dark Oak Button
 tile.littlethings:spruce_button.name=Spruce Button
 tile.littlethings:jungle_button.name=Jungle Button
 
+item.littlethings:the_dream.name=The Dream
+item.littlethings:the_dream.desc.1=A Miners Delight.
+item.littlethings:the_dream.desc.2=Shift right click a block to use.
+item.littlethings:the_dream.desc.shift.1=Warning: Will destroy trash blocks...
+item.littlethings:the_dream.desc.shift.2=No returns...
+
 command.littlethings.tpdim=/tpdim <dimension #> [x] [y] [z] OR /tpdim <player> <dimension #> [x] [y] [z] OR /tpdim <target player> [destination player]
 command.littlethings.tpdim.noDim=Dimension #%s does not exist!
 command.littlethings.tpdim.useVanilla=Please use /tp to run this command (Will be operational soon)

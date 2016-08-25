@@ -4,6 +4,7 @@ import com.gamingsmod.littlethings.base.loader.Section;
 import com.gamingsmod.littlethings.vanity.addition.ArmorStandGui;
 import com.gamingsmod.littlethings.vanity.addition.NoConflictRecipes;
 import com.gamingsmod.littlethings.vanity.addition.RawFoodHunger;
+import com.gamingsmod.littlethings.vanity.addition.TheDream;
 
 public class VanitySection extends Section
 {
@@ -13,5 +14,6 @@ public class VanitySection extends Section
         addAddition(new NoConflictRecipes());
         addAddition(new RawFoodHunger(), "Raw food gives hunger effect");
         addAddition(new ArmorStandGui());
+        addAddition(new TheDream(), "Miners dream");
     }
 }
